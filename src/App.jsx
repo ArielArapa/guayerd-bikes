@@ -12,8 +12,9 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Productos />} />
         <Route path="producto" element={<Locura />} />
-      </Routes>
+      </Routes >
     </BrowserRouter>
+    {/* agarrar title y usarlo de paramentro, usar tolowercase y convertir los espacios en -  */}
   </>
 )
 

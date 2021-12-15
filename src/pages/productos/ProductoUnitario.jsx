@@ -1,4 +1,4 @@
-import Image1 from '../../image/bici.jpg'
+import Image1 from '../../Image/bici.jpg'
 import { Link } from 'react-router-dom';
 
 const es = {
@@ -21,7 +21,7 @@ const es = {
 const Locura = () => (
     <>
         <nav>
-            <Link to="/">Inicio</Link>
+            <Link to="/{array.title}">Inicio</Link>
         </nav>
         <div style={es.card}>
             <img src={Image1} alt="bicicletas" style={es.img} />
