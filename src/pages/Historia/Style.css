@@ -101,3 +101,7 @@
       grid-template-areas: "img-exito exito";
     }
   }
+
+  body {
+    background-color: #b4d4f3;
+  }
