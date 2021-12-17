@@ -1,14 +1,32 @@
-import React from "react";
-import Style from "./Style";
-import imgBanner from "././imagen/imgBanner.png";
+import "./style.css";
+import React, { useEffect, useState } from "react";
 
-const Headerh = () => (
+
+const Headerh = () => {
+// Inicializar estado para guardar posts
+const [posts, setPosts] = useState([]);
+
+useEffect(() => {
+    // Fetch data cuando se monta el componente
+    fetch("http://demo2420474.mockable.io/getHomeBanner")
+    .then(res => res.json())
+    .then(json =>
+    // Guarda posts en estado
+    setPosts(json)
+    )
+}, [setPosts]); // <-- No se paso el segundo argumento ([]). que sucederá?
+
+// Renderizar como siempre
+return (
 <>
+
 <span class="ir-arriba" id="button-down">^</span>
-<section class="nav">
-  <img src="../../imagen/imgBanner.png" alt="imgBanner" className="imgBanner"/>
+<div class="nav">
+  
+<img src={posts.imgUrl} alt="imgBanner" className="imgBanner"/>
+     
   <header class="nav-header">
-    <a href="#" class="logo">Guayerd Bikes</a>
+  <h1 class="logo">Guayerd Bikes</h1>
     <div class="toggle" onclick="toggleMenu()"></div>
     <ul class="nav-ul">
       <li><a class="prada" href="#Historia">Historia</a></li>
@@ -17,40 +35,12 @@ const Headerh = () => (
       <li><a class="prada" href="ofertas personalizadas.html">Ofertas personalizadas</a></li>
     </ul>
   </header>
-</section>
+</div> 
 </>
-)
+    )
 
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
-
-function Reddit() {
-    // Inicializar estado para guardar posts
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        // Fetch data cuando se monta el componente
-        fetch("https://www.reddit.com/r/reactjs.json")
-        .then(res => res.json())
-        .then(json =>
-        // Guarda posts en estado
-        setPosts(json.data.children.map(c => c.data))
-        )
-    }); // <-- No se paso el segundo argumento ([]). que sucederá?
-
-    // Renderizar como siempre
-    return (
-        <ul>
-        {posts.map(post => (
-            <li key={post.id} > {post.title} </li>
-        ))}
-        </ul>
-    );
 }
 
-ReactDOM.render(
-    <Reddit /> ,
-    document.querySelector("#root")
-);
+
 
 export default Headerh;
