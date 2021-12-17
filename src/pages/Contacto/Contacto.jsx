@@ -54,4 +54,34 @@ const SignupForm = () => {
     );
 };
 
+// {
+//     "workbench.editorAssociations": {
+//         "*.ipynb": "jupyter-notebook"
+//     },
+//     "notebook.cellToolbarLocation": {
+//         "default": "right",
+//         "jupyter-notebook": "left"
+//     },
+//     "liveServer.settings.donotShowInfoMsg": true,
+//     "workbench.iconTheme": "material-icon-theme",
+//     "[html]": {
+//         "editor.defaultFormatter": "vscode.html-language-features"
+//     },
+//     "editor.formatOnSave": true,
+//     "prettier.printWidth": 100,
+//     "git.autofetch": true,
+//     "liveServer.settings.donotVerifyTags": true,
+//     "workbench.colorTheme": "Night Owl",
+//     "workbench.productIconTheme": "material-product-icons",
+//     "bracket-pair-colorizer-2.colors": [
+
+//         "#fafafa",
+//         "#9F51B6",
+//         "#F7C244",
+//         "#F07850",
+//         "#9CDD29",
+//         "#C497D4"
+//     ],
+// }
+
 export default SignupForm;
