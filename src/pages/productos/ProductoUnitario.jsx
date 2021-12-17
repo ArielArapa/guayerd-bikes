@@ -1,8 +1,7 @@
-import Image1 from '../../Image/bici.jpg'
+import Image1 from '../../image/bici.jpg'
 import { Link } from 'react-router-dom';
 
 const es = {
-
     card: {
         backgroundColor: "#aca",
         padding: "20px",
@@ -21,7 +20,7 @@ const es = {
 const Locura = () => (
     <>
         <nav>
-            <Link to="/{array.title}">Inicio</Link>
+            <Link to="/">Inicio</Link>
         </nav>
         <div style={es.card}>
             <img src={Image1} alt="bicicletas" style={es.img} />
