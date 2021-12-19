@@ -2,7 +2,7 @@ import './App.css';
 import Locura from './pages/productos/ProductoUnitario';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Productos from './pages/productos/Productos';
-import SignupForm from './pages/contacto/Contacto';
+import Contacto from './pages/contacto/Contacto';
 
 
 const App = () => (
@@ -13,7 +13,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Productos />} />
         <Route path="producto" element={<Locura />} />
-        <Route path="contacto" element={<SignupForm />} />
+        <Route path="contacto" element={<Contacto />} />
       </Routes >
     </BrowserRouter>
     {/* agarrar title y usarlo de paramentro, usar tolowercase y convertir los espacios en -  */}
