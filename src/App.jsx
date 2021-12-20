@@ -1,16 +1,26 @@
 import './App.css';
 import Historia from './pages/historia/Componente';
 import Descont from "./pages/Descuento/index.jsx";
+import Headerh from "././pages/Header"
+import Locura from './pages/productos/ProductoUnitario';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Productos from './pages/productos/Productos';
+import Contacto from './pages/contacto/Contacto';
 
-
-const App = () => (
-<>
-<Historia/>
-<Descont/>
-</>
-
-);
-
-
+const App = () => {
+  return (
+    <>
+      <BrowserRouter>
+        <Historia/>
+        <Descont/>
+        <Headerh />
+        <Routes>
+          <Route path="/" element={<Productos />} />
+          <Route path="producto" element={<Locura />} />
+          <Route path="contacto" element={<Contacto />} />
+        </Routes >
+      </BrowserRouter>
+    </>)
+}
 
 export default App;

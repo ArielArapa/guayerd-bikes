@@ -124,6 +124,8 @@ const Historia = () =>  (
         los conocimientos de Franco y todo su equipo de ingenieros, además de toda la experiencia
         de profesionales como Sandro Guzmán, Pepe Sánchez o Rui Costa JR. Su éxito es nuestra
         motivación.
+
+        
       </p>
     </div>
     <div class="img-exito">
@@ -133,5 +135,8 @@ const Historia = () =>  (
 </section>
 </>
 );
+
+
+
 
 export default Historia
