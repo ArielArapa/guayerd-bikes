@@ -7,11 +7,14 @@ const ar = {
         display: "flex",
         flexDirection: "column",
         padding: "0 2rem",
-        margin: "0 5rem"
+        margin: "0 3rem"
 
     },
     input: {
-        margin: ".5rem 0"
+        margin: ".5rem 0",
+        height: "24px",
+        border: 0,
+        backgroundColor: "",
     },
     button: {
         margin: "20px 0",
@@ -123,11 +126,11 @@ const SignupForm = () => {
             >
                 <Form >
                     <div style={ar.div}>
-                        <MyTextInput label="First Name" name="firstName" type="text" placeholder="Jane" style={ar.input} />
+                        <MyTextInput label="Nombre" name="firstName" type="text" style={ar.input} />
 
-                        <MyTextInput label="Contraseña" name="contraseña" type="password" placeholder="Ingresar contraseña" style={ar.input} />
+                        <MyTextInput label="Contraseña" name="contraseña" type="password" style={ar.input} />
 
-                        <MyTextInput label="Email Address" name="email" type="email" placeholder="example@example.com" style={ar.input} />
+                        <MyTextInput label="Email" name="email" type="email" style={ar.input} />
 
                         <MySelect label="Tema" name="tema" style={ar.input}>
                             <option value="">Elegir tema</option>
@@ -137,7 +140,7 @@ const SignupForm = () => {
                             <option value="otro">Otros</option>
                         </MySelect>
 
-                        <MyTextArea label="Comentario" name="consulta" rows="6" placeholder="Mas detalles" style={ar.input} />
+                        <MyTextArea label="Comentario" name="consulta" rows="6" style={ar.input} />
 
                         <MyCheckbox name="acceptedTerms" style={ar.input}>
                             Acepto términos y condiciones
