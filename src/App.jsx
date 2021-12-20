@@ -6,7 +6,7 @@ import Locura from './pages/productos/ProductoUnitario';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Productos from './pages/productos/Productos';
 import Contacto from './pages/contacto/Contacto';
-
+import Foter from './pages/Footer';
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
         <Productos />
         <Historia/>
         <Contacto />
+        <Foter />
         <Routes>
           <Route path="producto" element={<Locura />} />
         </Routes >
