@@ -1,0 +1,112 @@
+footer {
+    width: 100%;
+    background-color: #335563;
+    color: #fff;
+  }
+  .contenedor-de-todo-footer {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+  
+    background: #335563;
+  }
+  
+  .contenedor-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .colum1 {
+    max-width: 400px;
+    margin: 20px 0 0 20px;
+  }
+  
+  .colum1 h1 {
+    font-size: 22px;
+  }
+  
+  .colum1 p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .colum2 {
+    max-width: 400px;
+    justify-content: center;
+  }
+  
+  .colum2 h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .contain-icon {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icons img {
+    width: 36px;
+    height: 36px;
+    margin-top: 10px;
+  }
+  
+  .icons label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #fff;
+  }
+  
+  .colum3 {
+    max-width: 400px;
+  }
+  
+  .colum3 h1 {
+    font-size: 22px;
+  }
+  
+  .icons2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icons2 img {
+    margin-top: 15px;
+    width: 56px;
+    height: 56px;
+  }
+  
+  .icons2 label {
+    margin-left: 20px;
+    max-width: 120px;
+    margin-top: 10px;
+  }
+  
+  .contenedor-body2 {
+    height: 5px;
+    width: 2855px;
+    background: #000000;
+    background: #335563;
+    display: flex;
+    padding: 25px;
+    justify-content: space-around;
+  }
+  
+  .copyright {
+    color: #fff;
+  }
+  
+  .copyright a {
+    color: #fff;
+  }
+  
+  .politica a {
+    color: #fff;
+  }
+  
+  .oferta{
+    margin-left: 20px;
+    max-width: 120px;
+    margin-top: 10px;
+  }
