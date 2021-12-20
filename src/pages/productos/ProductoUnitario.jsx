@@ -17,7 +17,7 @@ const es = {
         padding: "0"
     }
 }
-const Locura = () => (
+const Locura = ({ }) => (
     <>
         <nav>
             <Link to="/">Inicio</Link>
