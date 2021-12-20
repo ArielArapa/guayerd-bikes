@@ -1,4 +1,4 @@
-import Image1 from '../../image/bici.jpg'
+import Image1 from '../../Image/bici.jpg'
 import { Link } from 'react-router-dom';
 
 const es = {

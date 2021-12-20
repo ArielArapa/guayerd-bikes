@@ -5,6 +5,7 @@ const style = {
         backgroundColor: "#21bbbb",
         borderRadius: "0.35rem",
         background: "#6994be",
+        color: "#fff"
     },
     img: {
         width: "100%",

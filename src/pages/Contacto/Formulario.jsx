@@ -1,12 +1,13 @@
 import React from 'react';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
+// import * as Yup from 'yup';
 
 const ar = {
     div: {
         display: "flex",
         flexDirection: "column",
-        padding: "0 2rem",
+        padding: "30px 2rem",
         margin: "0 3rem"
 
     },

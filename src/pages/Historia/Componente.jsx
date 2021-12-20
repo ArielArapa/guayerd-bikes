@@ -4,9 +4,14 @@ import Img3 from "../../Image/historia-innovacion.jpg";
 import Img4 from "../../Image/historia1.jpg";
 import "./Style.css"
 
+const style = {
+  textAlign: "center",
+  marginTop: "30px"
+}
+
 const Historia = () =>  (
     <>
-<h2 class="title-historia" id="Historia">Nuestra Historia</h2>
+<h2 style={style} id="Historia">Nuestra Historia</h2>
 <section>
   <div class="historia-container">
     <div class="texto-guayerd">

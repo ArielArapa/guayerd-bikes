@@ -19,8 +19,6 @@ useEffect(() => {
 // Renderizar como siempre
 return (
 <>
-
-<span class="ir-arriba" id="button-down">^</span>
 <div class="nav">
   
 <img src={posts.imgUrl} alt="imgBanner" className="imgBanner"/>
