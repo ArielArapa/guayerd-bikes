@@ -3,7 +3,7 @@ import img2 from "../../Image/pinterest.png"
 import img3 from "../../Image/twitter.png"
 import img4 from "../../Image/descarga.png"
 import img5 from "../../Image/facebook.png"
-const foter = () =>{
+const Foter = () =>{
 return (
     <>
      <footer>
@@ -88,3 +88,5 @@ return (
 
 
 }
+
+export default Foter
