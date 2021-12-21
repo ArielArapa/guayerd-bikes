@@ -49,6 +49,13 @@ nav {
   top: 20px;
 }
 
+.prada{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.prada:hover{
+  font-size: 18px;
+}
+
 h1 {
   font-size: x-large;
 }
