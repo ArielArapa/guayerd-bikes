@@ -12,9 +12,9 @@ return (
 
       <div class="contenedor-body">
         <div class="colum1">
-          <h1>Mas informacion de la compañia</h1>
+          <h1>Mas información de la compañia</h1>
           <p>Bicicletas de competición y urbanas. Somos fabricantes de las mejores bicicletas de la región.
-            Atención personalizada y venta de accesorios..</p>
+            Atención personalizada y venta de accesorios.</p>
         </div>
         <div class="colum2">
           <h1>Redes</h1>
@@ -46,7 +46,7 @@ return (
           </div>
         </div>
         <div class="colum3">
-          <h1>información</h1>
+          <h1>Información</h1>
           <div class="icons2">
             <img src= {img4}/>
             <label>
@@ -62,7 +62,7 @@ return (
     </div>
     <div class="contenedor-body2">
       <div class="copyright">
-        &#9426 2021 Todos los Derechos Reservados | <a href="https://www.youtube.com/watch?v=dvgZkm1xWPE">Viva la
+      © 2021 Todos los Derechos Reservados | <a href="https://www.youtube.com/watch?v=dvgZkm1xWPE">Viva la
           vida</a>
       </div>
       <div>
