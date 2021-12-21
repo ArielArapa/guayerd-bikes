@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 /* import { Link } from "react-router-dom" */
+import SweetAlert from 'react-bootstrap-sweetalert';
+
 const Descont = () => {
 
     const [posts, setPosts] = useState([]);
