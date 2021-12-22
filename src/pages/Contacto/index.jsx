@@ -1,35 +1,14 @@
-import SignupForm from "./Formulario";
-
-const ar = {
-    div: {
-        display: "flex",
-        justifyContent: "center",
-        marginTop: "1.5rem",
-        marginBotton: "40px"
-
-    },
-    form: {
-        backgroundColor: "#6994be",
-    },
-    titulo: {
-        textAlign: "center",
-        marginTop: "30px"
-    },
-    container: {
-        backgroundColor: "#fff",
-        
-    }
-
-}
+import SignupForm from "./formulario";
+import style from './style';
 
 const Contacto = () => {
 
     return (
         <>
-            <div style={ar.container}>
-                <h2 style={ar.titulo} id="Contacto">Contacto</h2>
-                <div style={ar.div}>
-                    <div style={ar.form} >
+            <div style={style.containerContacto}>
+                <h2 style={style.tituloContacto} id="Contacto">Contacto</h2>
+                <div style={style.divContacto}>
+                    <div style={style.formContacto} >
                         <SignupForm />
                     </div>
                     <div>

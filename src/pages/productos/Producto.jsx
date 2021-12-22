@@ -1,23 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
-const style = {
-    card: {
-        backgroundColor: "#21bbbb",
-        borderRadius: "0.35rem",
-        background: "#6994be",
-        color: "#fff"
-    },
-    img: {
-        width: "100%",
-        borderRadius: "0.35rem 0.35rem 0 0"
-    },
-    cardContent: {
-        padding: "10px",
-    },
-    textTachado: {
-        textDecoration: "line-through"
-    }
-}
+import style from "./style";
 
 const Producto = () => {
 
@@ -35,10 +18,10 @@ const Producto = () => {
             {posts.map((element) => {
                 return (
                     <>
-                        <div style={style.card} key={element.title}>
-                            <img src={element.imgUrl} alt={element.title} style={style.img} />
-                            <div style={style.cardContent}>
-                                <span style={style.textTachado}>{element.discountPrice}</span>
+                        <div style={style.cardProducto} key={element.title}>
+                            <img src={element.imgUrl} alt={element.title} style={style.imgProducto} />
+                            <div style={style.cardContentProducto}>
+                                <span style={style.textTachadoProducto}>{element.discountPrice}</span>
                                 <p>Precio actual: {element.price}</p>
                                 <h1>{element.title}</h1>
                                 <p>{element.description}</p>

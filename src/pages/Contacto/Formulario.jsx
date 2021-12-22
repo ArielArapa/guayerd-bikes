@@ -1,32 +1,10 @@
-import React from 'react';
+import style from './style';
+
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
-// import * as Yup from 'yup';
 
-const ar = {
-    div: {
-        display: "flex",
-        flexDirection: "column",
-        padding: "30px 2rem",
-        margin: "0 3rem"
-
-    },
-    input: {
-        margin: ".5rem 0",
-        height: "24px",
-        border: 0,
-        backgroundColor: "",
-    },
-    button: {
-        margin: "20px 0",
-        height: "30px"
-    }
-}
 
 const MyTextInput = ({ label, ...props }) => {
-    // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-    // which we can spread on <input>. We can use field meta to show an error
-    // message if the field is invalid and it has been touched (i.e. visited)
     const [field, meta] = useField(props);
     return (
         <>
@@ -40,10 +18,6 @@ const MyTextInput = ({ label, ...props }) => {
 };
 
 const MyCheckbox = ({ children, ...props }) => {
-    // React treats radios and checkbox inputs differently other input types, select, and textarea.
-    // Formik does this too! When you specify `type` to useField(), it will
-    // return the correct bag of props for you -- a `checked` prop will be included
-    // in `field` alongside `name`, `value`, `onChange`, and `onBlur`
     const [field, meta] = useField({ ...props, type: 'checkbox' });
     return (
         <div>
@@ -71,8 +45,6 @@ const MySelect = ({ label, ...props }) => {
     );
 };
 const MyTextArea = ({ label, ...props }) => {
-    // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-    // which we can spread on <input> and alse replace ErrorMessage entirely.
     const [field, meta] = useField(props);
     return (
         <>
@@ -85,7 +57,6 @@ const MyTextArea = ({ label, ...props }) => {
     );
 };
 
-// And now we can use these
 const SignupForm = () => {
     return (
         <>
@@ -94,8 +65,8 @@ const SignupForm = () => {
                     firstName: '',
                     contraseña: '',
                     email: '',
-                    acceptedTerms: false, // added for our checkbox
-                    tema: '', // added for our select
+                    acceptedTerms: false,
+                    tema: '',
                     consulta: '',
                 }}
                 validationSchema={Yup.object({
@@ -126,14 +97,14 @@ const SignupForm = () => {
                 }}
             >
                 <Form >
-                    <div style={ar.div}>
-                        <MyTextInput label="Nombre" name="firstName" type="text" style={ar.input} />
+                    <div style={style.divForm}>
+                        <MyTextInput label="Nombre" name="firstName" type="text" style={style.input} />
 
-                        <MyTextInput label="Contraseña" name="contraseña" type="password" style={ar.input} />
+                        <MyTextInput label="Contraseña" name="contraseña" type="password" style={style.input} />
 
-                        <MyTextInput label="Email" name="email" type="email" style={ar.input} />
+                        <MyTextInput label="Email" name="email" type="email" style={style.input} />
 
-                        <MySelect label="Tema" name="tema" style={ar.input}>
+                        <MySelect label="Tema" name="tema" style={style.input}>
                             <option value="">Elegir tema</option>
                             <option value="venta">Venta</option>
                             <option value="trabajo">Trabajo</option>
@@ -141,14 +112,14 @@ const SignupForm = () => {
                             <option value="otro">Otros</option>
                         </MySelect>
 
-                        <MyTextArea label="Comentario" name="consulta" rows="6" style={ar.input} />
+                        <MyTextArea label="Comentario" name="consulta" rows="6" style={style.input} />
 
-                        <MyCheckbox name="acceptedTerms" style={ar.input}>
+                        <MyCheckbox name="acceptedTerms" style={style.input}>
                             Acepto términos y condiciones
                         </MyCheckbox>
 
 
-                        <button type="submit" style={ar.button} >Enviar</button>
+                        <button type="submit" style={style.button} >Enviar</button>
                     </div>
                 </Form>
             </Formik>

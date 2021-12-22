@@ -1,23 +1,23 @@
 import './App.css';
-import Historia from './pages/historia/Componente';
+import Historia from './pages/Historia';
 import Descont from "./pages/Descuento";
 import Headerh from "././pages/Header"
-import Locura from './pages/productos/ProductoUnitario';
+import Locura from './pages/Productos/productoUnitario';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Productos from './pages/productos/Productos';
-import Contacto from './pages/contacto/Contacto';
+import Productos from './pages/Productos';
+import Contacto from './pages/Contacto';
 import Foter from './pages/Footer';
 
 const App = () => {
   return (
     <>
+      <Headerh />
+      <Descont />
+      <Productos />
+      <Historia />
+      <Contacto />
+      <Foter />
       <BrowserRouter>
-        <Headerh />
-        <Descont />
-        <Productos />
-        <Historia />
-        <Contacto />
-        <Foter />
         <Routes>
           <Route path="producto" element={<Locura />} />
         </Routes >
