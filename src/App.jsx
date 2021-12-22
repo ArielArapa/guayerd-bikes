@@ -1,6 +1,6 @@
 import './App.css';
 import Historia from './pages/historia/Componente';
-import Descont from "./pages/Descuento/index.jsx";
+import Descont from "./pages/Descuento";
 import Headerh from "././pages/Header"
 import Locura from './pages/productos/ProductoUnitario';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -13,9 +13,9 @@ const App = () => {
     <>
       <BrowserRouter>
         <Headerh />
-        <Descont/>
+        <Descont />
         <Productos />
-        <Historia/>
+        <Historia />
         <Contacto />
         <Routes>
           <Route path="producto" element={<Locura />} />
