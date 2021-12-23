@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./style";
 
-const Prueba = ({ tipo }) => {
+const Maqueta = ({ tipo }) => {
 
     const [posts, setPosts] = useState([]);
     useEffect(() => {
@@ -33,4 +33,4 @@ const Prueba = ({ tipo }) => {
     )
 }
 
-export default Prueba;
+export default Maqueta;

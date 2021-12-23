@@ -1,25 +1,22 @@
 import './App.css';
-import Historia from './pages/Historia';
-import Descont from "./pages/Descuento";
-import Headerh from "././pages/Header"
-import Locura from './pages/Productos/productoUnitario';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Productos from './pages/Productos';
-import Contacto from './pages/Contacto';
-import Foter from './pages/Footer';
+import PagePrincipal from './pages/PagePrincipal';
+import TipoCarrera from './pages/Productos/TipoCarrera';
+import TipoBmx from './pages/Productos/TipoBmx';
+import TipoPlebagle from './pages/Productos/TipoPlegable';
+import TipoKid from './pages/Productos/TipoKid';
 
 const App = () => {
   return (
     <>
-      <Headerh />
-      <Descont />
-      <Productos />
-      <Historia />
-      <Contacto />
-      <Foter />
       <BrowserRouter>
         <Routes>
-          <Route path="producto" element={<Locura />} />
+          <Route path="/" element={<PagePrincipal />} >
+          </Route>
+          <Route path="carrera" element={<TipoCarrera />} />
+          <Route path="bmx" element={<TipoBmx />} />
+          <Route path="plegable" element={<TipoPlebagle />} />
+          <Route path="kid" element={<TipoKid />} />
         </Routes >
       </BrowserRouter>
     </>)
