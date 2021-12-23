@@ -1,6 +1,24 @@
 import React, { useEffect, useState } from "react";
-import style from "./style";
 import { Link } from "react-router-dom";
+
+const style = {
+    cardProducto: {
+        backgroundColor: "#21bbbb",
+        borderRadius: "0.1rem",
+        background: "#6994be",
+        color: "#fff"
+    },
+    imgProducto: {
+        width: "100%",
+        borderRadius: "0.1rem 0.1rem 0 0"
+    },
+    cardContentProducto: {
+        padding: "10px",
+    },
+    precio: {
+        fontSize: "30px"
+    }
+}
 
 const Maqueta = ({ tipo }) => {
 
@@ -20,10 +38,8 @@ const Maqueta = ({ tipo }) => {
                         <div style={style.cardProducto} key={element.id}>
                             <img src={element.img} alt={element.nombre} style={style.imgProducto} />
                             <div style={style.cardContentProducto}>
-                                <span>{element.stock}</span>
-                                <p>Precio actual: {element.precio}</p>
+                                <p style={style.precio}>$ {element.precio}</p>
                                 <h1>{element.nombre}</h1>
-                                <p>{element.descripcion}</p>
                                 <Link to={element.id} >
                                     <button>Ver más</button>
                                 </Link>

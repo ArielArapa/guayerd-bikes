@@ -1,12 +1,16 @@
-import style from "./style";
 import Maqueta from "./Maqueta";
+import { Link } from "react-router-dom";
 //import { Link } from "react-router-dom";
+import TipoStyle from "./tipoStyle";
 
 const TipoCarrera = () => {
     return (
         <>
-            <h2 style={style.tituloIndex} id="Productos">Productos Carrera</h2>
-            <div style={style.cardIndex}>
+            <nav>
+                <Link to="/">Inicio</Link>
+            </nav>
+            <h2 style={TipoStyle.tituloIndex} id="Productos">Productos Carrera</h2>
+            <div style={TipoStyle.cardIndex}>
                 {/* <Producto /> */}
                 <Maqueta tipo={"carrera"} />
             </div>

@@ -1,39 +1,80 @@
-import style from "./style";
-import image from '../../Image/bici.jpg'
 import { Link } from "react-router-dom";
-//import { Link } from "react-router-dom";
+
+import img1 from '../../Image/carrera.jpg'
+import img2 from '../../Image/plegable.jpg'
+import img3 from '../../Image/bmx.jpg'
+import img4 from '../../Image/kid.jpg'
+
+
+const style = {
+    cardProducto: {
+        height: "250px",
+        display: "flex",
+        alignItems: "flex-end",
+    },
+    tituloIndex: {
+        textAlign: "center",
+        marginTop: "30px",
+    },
+    cardTipos: {
+        margin: "30px",
+        display: "grid",
+        gridGap: "30px",
+        gridTemplateColumns: "repeat(4, 1fr)",
+    },
+    imgProducto: {
+        width: "100%",
+        borderRadius: "0.1rem 0.1rem 0 0",
+
+    },
+    h3: {
+        textAlign: "center",
+        paddingBotton: "20px"
+    },
+    containerImg: {
+        backgroundColor: "#fff",
+        borderRadius: "0.1rem",
+
+    }
+}
 
 const Productos = () => {
-    const saludar = (tipo) => (event) => {
-        alert("ingresar a mas productos de " + tipo);
-        //al hacer click => llevarnos a lista de productos
-    }
+
     return (
         <>
             <h2 style={style.tituloIndex} id="Productos">Productos</h2>
             <div style={style.cardTipos} >
                 <Link to={`carrera`}>
-                    <div style={style.cardProducto} onClick={saludar("carrera")}>
-                        <img src={image} alt="locura" style={style.imgProducto} />
-                        <h3>Carrera</h3>
+                    <div style={style.containerImg}>
+                        <h3 style={style.h3}>Carrera</h3>
+                        <div style={style.cardProducto}>
+                            <img src={img1} alt="locura" style={style.imgProducto} />
+                        </div>
                     </div>
                 </Link>
+
                 <Link to={"plegable"}>
-                    <div style={style.cardProducto} onClick={saludar("desplegable")}>
-                        <img src={image} alt="locura" style={style.imgProducto} />
-                        <h3>Desplegable</h3>
+                    <div style={style.containerImg}>
+                        <h3 style={style.h3}>Plegable</h3>
+                        <div style={style.cardProducto}>
+                            <img src={img2} alt="locura" style={style.imgProducto} />
+                        </div>
                     </div>
                 </Link>
                 <Link to={"bmx"}>
-                    <div style={style.cardProducto} onClick={saludar("bmx")}>
-                        <img src={image} alt="locura" style={style.imgProducto} />
-                        <h3>BMX</h3>
+                    <div style={style.containerImg}>
+                        <h3 style={style.h3}>BMX</h3>
+                        <div style={style.cardProducto}>
+                            <img src={img3} alt="locura" style={style.imgProducto} />
+                        </div>
                     </div>
                 </Link>
                 <Link to={"kid"}>
-                    <div style={style.cardProducto} onClick={saludar("kid")}>
-                        <img src={image} alt="locura" style={style.imgProducto} />
-                        <h3>kid</h3>
+                    <div style={style.containerImg}>
+                        <h3 style={style.h3}>kid</h3>
+                        <div style={style.cardProducto}>
+                            <img src={img4} alt="locura" style={style.imgProducto} />
+                        </div>
                     </div>
                 </Link>
             </div>
