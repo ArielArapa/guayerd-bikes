@@ -1,4 +1,3 @@
-import Image1 from '../../Image/bici.jpg'
 import { Link } from 'react-router-dom';
 import style from './style';
 
@@ -8,14 +7,14 @@ const Unitario = () => {
             <Link to="/">Inicio</Link>
         </nav>
         <div style={style.cardUni}>
-            <img src={Image1} alt="bicicletas" style={style.imgUni} />
-            <div style={style.cardContentUni}>
-                <h1>Bicicleta nueva</h1>
-                <span >24343</span>
-                <p>Precio actual: $3212242342</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corporis eveniet modi eos similique praesentium repudiandae aliquam doloremque culpa, velit non est alias neque nulla itaque tempora in deleniti quae?</p>
-                <button>hola</button>
-            </div>
+            <h1>Se encunetra en esta url :</h1>
+            {/* <img src={img} alt={titulo} style={style.imgUni} /> */}
+            {/* <div style={style.cardContentUni}>
+                <h1>{props.nombre}</h1>
+                <span >{props.stock}</span>
+                <p>Precio actual: $ {props.precio}</p>
+                <p>{props.descripcion}</p>
+            </div> */}
         </div>
     </>
     )

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "./style";
+import { Link } from "react-router-dom";
 
 const Maqueta = ({ tipo }) => {
 
@@ -23,7 +24,10 @@ const Maqueta = ({ tipo }) => {
                                 <p>Precio actual: {element.precio}</p>
                                 <h1>{element.nombre}</h1>
                                 <p>{element.descripcion}</p>
-                                <button>Ver más</button>
+                                <Link to={"2"} >
+                                    <button>Ver más</button>
+                                </Link>
+
                                 {/* <Link to="producto">Ver más</Link> */}
                             </div>
                         </div>
