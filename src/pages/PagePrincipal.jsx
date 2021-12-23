@@ -8,6 +8,7 @@ import Productos from "./Productos"
 const PagePrincipal = () => {
     return (
         <>
+
             <Headerh />
             <Descont />
             <Productos />
