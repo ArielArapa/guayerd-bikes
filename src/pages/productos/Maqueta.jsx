@@ -24,7 +24,7 @@ const Maqueta = ({ tipo }) => {
                                 <p>Precio actual: {element.precio}</p>
                                 <h1>{element.nombre}</h1>
                                 <p>{element.descripcion}</p>
-                                <Link to={"2"} >
+                                <Link to={element.id} >
                                     <button>Ver más</button>
                                 </Link>
 
