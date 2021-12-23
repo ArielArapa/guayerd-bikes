@@ -43,7 +43,16 @@ const style = {
     },
     textTachadoProducto: {
         textDecoration: "line-through"
-    }
+    },
+
+    //tipo de bicis
+    cardTipos: {
+        margin: "30px",
+        display: "grid",
+        gridGap: "30px",
+        gridTemplateColumns: "repeat(4, 1fr)",
+    },
+
 }
 
 export default style;
