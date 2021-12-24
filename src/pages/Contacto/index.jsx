@@ -1,4 +1,4 @@
-import SignupForm from "./formulario";
+import SignupForm from "./Formulario";
 import style from './style';
 
 const Contacto = () => {

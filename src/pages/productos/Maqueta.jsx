@@ -43,8 +43,6 @@ const Maqueta = ({ tipo }) => {
                                 <Link to={element.id} >
                                     <button>Ver más</button>
                                 </Link>
-
-                                {/* <Link to="producto">Ver más</Link> */}
                             </div>
                         </div>
                     </>)

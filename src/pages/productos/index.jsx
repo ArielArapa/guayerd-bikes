@@ -5,13 +5,9 @@ import img2 from '../../Image/plegable.jpg'
 import img3 from '../../Image/bmx.jpg'
 import img4 from '../../Image/kid.jpg'
 
+import CardsTipos from "../../components/CardsTipo";
 
 const style = {
-    cardProducto: {
-        height: "250px",
-        display: "flex",
-        alignItems: "flex-end",
-    },
     tituloIndex: {
         textAlign: "center",
         marginTop: "30px",
@@ -22,20 +18,7 @@ const style = {
         gridGap: "30px",
         gridTemplateColumns: "repeat(4, 1fr)",
     },
-    imgProducto: {
-        width: "100%",
-        borderRadius: "0.1rem 0.1rem 0 0",
 
-    },
-    h3: {
-        textAlign: "center",
-        paddingBotton: "20px"
-    },
-    containerImg: {
-        backgroundColor: "#fff",
-        borderRadius: "0.1rem",
-
-    }
 }
 
 const Productos = () => {
@@ -45,37 +28,19 @@ const Productos = () => {
             <h2 style={style.tituloIndex} id="Productos">Productos</h2>
             <div style={style.cardTipos} >
                 <Link to={`carrera`}>
-                    <div style={style.containerImg}>
-                        <h3 style={style.h3}>Carrera</h3>
-                        <div style={style.cardProducto}>
-                            <img src={img1} alt="locura" style={style.imgProducto} />
-                        </div>
-                    </div>
+                    <CardsTipos titulo="Carrera" img={img1} alt="bicicleta de carrera" />
                 </Link>
 
                 <Link to={"plegable"}>
-                    <div style={style.containerImg}>
-                        <h3 style={style.h3}>Plegable</h3>
-                        <div style={style.cardProducto}>
-                            <img src={img2} alt="locura" style={style.imgProducto} />
-                        </div>
-                    </div>
+                    <CardsTipos titulo="Plegable" img={img2} alt="bicicleta plegable" />
                 </Link>
+
                 <Link to={"bmx"}>
-                    <div style={style.containerImg}>
-                        <h3 style={style.h3}>BMX</h3>
-                        <div style={style.cardProducto}>
-                            <img src={img3} alt="locura" style={style.imgProducto} />
-                        </div>
-                    </div>
+                    <CardsTipos titulo="BMX" img={img3} alt="bicicleta BMX" />
                 </Link>
+
                 <Link to={"kid"}>
-                    <div style={style.containerImg}>
-                        <h3 style={style.h3}>kid</h3>
-                        <div style={style.cardProducto}>
-                            <img src={img4} alt="locura" style={style.imgProducto} />
-                        </div>
-                    </div>
+                    <CardsTipos titulo="Kid" img={img4} alt="bicicleta de niños" />
                 </Link>
             </div>
         </>
